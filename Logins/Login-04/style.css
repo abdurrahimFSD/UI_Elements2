@@ -41,3 +41,8 @@ nav a img {
     width: 450px;
     background: rgba(0, 0, 0, 0.5);
 }
+
+.form-wrapper h2 {
+    color: #fff;
+    font-size: 2rem;
+}
