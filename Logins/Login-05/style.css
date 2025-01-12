@@ -78,3 +78,16 @@ form input:focus {
     text-align: center;
     gap: 15px;
 }
+
+.link .login {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #1877f2;
+    padding-block: 15px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
