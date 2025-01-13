@@ -91,3 +91,20 @@ form input:focus {
     font-weight: 600;
     transition: 0.2s ease;
 }
+
+.link .login:hover {
+    background: #0d65d9;
+}
+
+form a {
+    text-decoration: none;
+}
+
+.link .forgot {
+    color: #1877f2;
+    font-size: 0.875rem;;
+}
+
+.link .forgot:hover {
+    text-decoration: underline;
+}
