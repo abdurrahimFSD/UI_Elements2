@@ -108,3 +108,16 @@ form a {
 .link .forgot:hover {
     text-decoration: underline;
 }
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin-block: 20px;
+}
+
+.button {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
