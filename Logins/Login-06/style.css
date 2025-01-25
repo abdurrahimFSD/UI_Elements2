@@ -23,7 +23,7 @@ a {
 .nav {
     max-width: 1100px;
     width: 100%;
-    margin: 0 auto;
+    margin-inline: auto;
 }
 
 .nav,
@@ -32,4 +32,22 @@ a {
     height: 100%;
     align-items: center;
     justify-content: space-between;
+}
+
+.nav-logo,
+.nav-link,
+.button {
+    color: #fff;
+}
+
+.nav-logo {
+    font-size: 25px;
+}
+
+.nav-item {
+    column-gap: 25px;
+}
+
+.nav-link:hover {
+    color: #d9d9d9;
 }
