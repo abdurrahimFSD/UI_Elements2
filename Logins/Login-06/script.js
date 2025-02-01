@@ -1,4 +1,4 @@
-const formOpenBtn = document.querySelector("form-open"),
+const formOpenBtn = document.querySelector("#form-open"),
     home = document.querySelector(".home"),
     formContainer = document.querySelector(".form-container"),
     formCloseBtn = document.querySelector(".form-close"),
@@ -20,4 +20,13 @@ pwShowHide.forEach((icon) => {
             icon.classList.replace("uil-eye", "uil-eye-slash");
         }
     });
+});
+
+signupBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    formContainer.classList.add("active");
+});
+loginBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    formContainer.classList.remove("active");
 });
