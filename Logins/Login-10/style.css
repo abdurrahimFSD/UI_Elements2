@@ -13,6 +13,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #4070f4;
 }
 
 .container {
@@ -123,4 +124,60 @@ body {
     right: 0;
     cursor: pointer;
     padding: 10px;
+}
+
+.form .checkbox-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.checkbox-text .checkbox-content {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content input {
+    margin-right: 10px;
+    accent-color: #4070f4;
+}
+
+.form .text {
+    color: #333;
+    font-size: 14px;
+}
+
+.form a.text {
+    color: #4070f4;
+    text-decoration: none;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}
+
+.form .button {
+    margin-top: 35px;
+}
+
+.form .button input {
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: #4070f4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input:hover {
+    background-color: #265df2;
+}
+
+.form .login-signup {
+    margin-top: 30px;
+    text-align: center;
 }
