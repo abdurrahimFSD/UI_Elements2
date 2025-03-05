@@ -102,3 +102,42 @@ body {
     font-size: 15px;
     font-weight: 500;
 }
+
+.container .forms {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+}
+
+.container .form-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-content .login-form,
+.form-content .signup-form {
+    width: calc(100% / 2 - 25px);
+}
+
+.forms .form-content .title {
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+}
+
+.forms .form-content .title:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 25px;
+    background-color: #7d2ae8;
+}
+
+.forms .signup-form .title:before {
+    width: 20px;
+}
+
