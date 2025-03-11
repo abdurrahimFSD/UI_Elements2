@@ -89,3 +89,57 @@ form .field.shake input,
 form .field.error input {
     border-color: #dc3545;
 }
+
+form .input-area i {
+    position: absolute;
+    top: 50%;
+    font-size: 18px;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+
+.input-area .icon {
+    left: 15px;
+    color: #bfbfbf;
+    transition: color 0.2s ease;
+}
+
+.input-area .error-icon {
+    right: 15px;
+    color: #dc3545;
+}
+
+form input:focus ~ .icon,
+form .field.valid .icon {
+    color: #5372F0;
+}
+
+form .field.shake input:focus ~ .icon,
+form .field.error input:focus ~ .icon {
+    color: #dc3545;
+}
+
+form input::placeholder {
+    color: #bfbfbf;
+    font-size: 17px;
+}
+
+form .field .error-txt {
+    color: #dc3545;
+    text-align: left;
+    margin-top: 5px;
+}
+
+form .field .error {
+    display: none;
+}
+
+form .field.shake .error,
+form .field.error .error {
+    display: block;
+}
+
+form .pass-txt {
+    text-align: left;
+    margin-top: -10px;
+}
