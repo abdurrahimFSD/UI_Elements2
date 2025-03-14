@@ -24,3 +24,20 @@ const checkEmail = () => {
         emailField.classList.add("valid");
     }
 };
+
+// Validasi password
+const checkPassword = () => {
+    const minLength = 8;
+    if (!passwordInput.value) {
+        passwordField.classList.add("error");
+        passwordField.classList.remove("valid");
+        passwordField.querySelector(".error-txt").innerText = "Password can't be blank";
+    } else if (passwordInput.value.length < minLength) {
+        passwordField.classList.add("error");
+        passwordField.classList.remove("valid");
+        passwordField.querySelector(".error-txt").innerText = `Password must be at least ${minLength} characters`;
+    } else {
+        passwordField.classList.remove("error");
+        passwordField.classList.add("valid");
+    }
+};
