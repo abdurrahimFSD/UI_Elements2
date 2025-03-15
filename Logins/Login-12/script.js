@@ -41,3 +41,24 @@ const checkPassword = () => {
         passwordField.classList.add("valid");
     }
 };
+
+// Form submission handler
+form.onsubmit = (e) => {
+    e.preventDefault();
+
+    // Reset classes
+    emailInput.value === "" ? emailField.classList.add("shake", "error") : checkEmail();
+    passwordInput.value === "" ? passwordField.classList.add("shake", "error") : checkPassword();
+
+    // Remove shake class after 500ms
+    setTimeout(removeShake, 500);
+
+    // Redirect jika tidak ada error
+    if (!emailField.classList.contains("error") && !passwordField.classList.contains("error")) {
+        window.location.href = form.getAttribute("action") || "#";
+    }
+};
+
+// Events listeners untuk real-time validation
+emailInput.addEventListener("keyup", checkEmail);
+passwordInput.addEventListener("keyup", checkPassword);
