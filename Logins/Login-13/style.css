@@ -89,3 +89,61 @@ html, body {
     transform: scaleX(1);
     transform-origin: left;
 }
+
+.container form .button {
+    margin: 40px 0 20px;
+}
+
+.container .input-box input[type="submit"] {
+    background: linear-gradient(to right, #030099 0%, #002fff 100%);
+    font-size: 17px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.container .input-box input[type="submit"]:hover {
+    letter-spacing: 1px;
+    background: linear-gradient(to left, #030099 0%, #002fff 100%);
+}
+
+.container .option {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.container .facebook a,
+.container .x a {
+    display: block;
+    height: 45px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    line-height: 45px;
+    color: #1c2035;
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+
+.container .facebook i,
+.container .x i {
+    padding-right: 8px;
+    font-size: 20px;
+}
+
+.container .x a,
+.container .facebook a {
+    background-color: #fbfcff;
+    border: 1px solid #4978f0;
+    margin: 12px 0;
+    transition: all .3s ease;
+}
+
+.container .facebook a:hover,
+.container .x a:hover {
+    background-color: #e0e5f1;
+}
