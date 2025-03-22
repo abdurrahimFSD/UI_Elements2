@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -13,7 +16,7 @@ html, body {
 }
 
 .container {
-    width: 365px;
+    width: 400px;
     background-color: #fff;
     padding: 30px;
     border-radius: 5px;    
@@ -27,16 +30,16 @@ html, body {
 }
 
 .container .social-icons {
-    margin-top: 20px;
+    margin-top: 25px;
     display: flex;
     justify-content: center;
 }
 
 .social-icons a {
     display: block;
-    height: 45px;
+    height: 50px;
     width: 100%;
-    line-height: 45px;
+    line-height: 50px;
     text-align: center;
     border-radius: 5px;
     font-size: 20px;
@@ -66,4 +69,101 @@ html, body {
 
 .social-icons a:last-child:hover {
     background-color: #1a91da;
+}
+
+form {
+    margin-top: 25px;
+}
+
+form .input-box {
+    height: 60px;
+    width: 100%;
+    position: relative;
+    margin-top: 15px;
+}
+
+.input-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding-left: 45px;
+    font-size: 17px;
+    transition: all 0.3s ease;
+}
+
+.input-box input:focus {
+    border-color: #be2edd;
+}
+
+.input-box .icon {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: grey;
+}
+
+form .options {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.options .checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox input {
+    display: flex;
+    align-items: center;
+    height: 15px;
+    width: 15px;
+    accent-color: #be2edd;
+}
+
+.checkbox label {
+    margin-left: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.options .forget {
+    font-size: 16px;
+    color: #be2edd;
+}
+
+.button input {
+    margin-top: 12px;
+    padding-left: 0;
+    background-color: #be2edd;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.button input:hover {
+    background-color: #a720c5;
+}
+
+form .sign-up {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.sign-up a {
+    color: #be2edd;
+}
+
+form a {
+    text-decoration: none;
+}
+
+form a:hover {
+    text-decoration: underline;
 }
