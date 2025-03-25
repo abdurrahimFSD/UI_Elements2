@@ -36,3 +36,46 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.wrapper form {
+    padding: 25px 35px;
+}
+
+.wrapper form .input-box {
+    height: 60px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.wrapper form .input-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 70px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+form .input-box input:focus {
+    border-color: #4dabf7;
+}
+
+form .input-box input::placeholder {
+    color: #999;
+}
+
+.wrapper form .input-box i {
+    position: absolute;
+    width: 55px;
+    height: 100%;
+    color: #fff;
+    font-size: 22px;
+    background-color: #4dabf7;
+    border: 1px solid #4dabf7;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
