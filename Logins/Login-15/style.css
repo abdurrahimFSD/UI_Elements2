@@ -79,3 +79,52 @@ form .input-box input::placeholder {
     justify-content: center;
     align-items: center;
 }
+
+.wrapper form .pass {
+    margin-top: 12px;
+}
+
+.wrapper form .pass a {
+    color: #4dabf7;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.wrapper form .pass a:hover {
+    text-decoration: underline;
+}
+
+.wrapper form .button .btn {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 0;
+    background-color: #4dabf7;
+    border: 1px solid #4dabf7;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form .button .btn:hover {
+    background-color: #339af0;
+}
+
+.wrapper form .signup-link {
+    text-align: center;
+    margin-top: 45px;
+    font-size: 17px;
+}
+
+.wrapper form .signup-link a {
+    color: #4dabf7;
+    text-decoration: none;
+}
+
+form .signup-link a:hover {
+    text-decoration: underline;
+}
