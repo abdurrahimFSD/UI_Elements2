@@ -37,3 +37,53 @@ g
     border-radius: 15px 15px 0 0;
     background: linear-gradient(-135deg, #c850c0, #4158d0);
 }
+
+.wrapper form {
+    padding: 10px 30px 50px;
+}
+
+.wrapper form .field {
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+.wrapper form .field input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    padding-inline: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    background-color: #fff;
+}
+
+.wrapper form .field input:focus,
+form .field input:valid {
+    border-color: #4158d0;
+}
+
+.wrapper form .field label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: #999;
+    font-weight: 400;
+    font-size: 17px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    padding-inline: 6px;
+}
+
+form .field input:focus ~ label,
+form .field input:valid ~ label {
+    top: 0%;
+    font-size: 14px;
+    color: #4158d0;
+    background-color: #fff;
+    transform: translateY(-50%);
+}
