@@ -56,13 +56,13 @@ g
     font-size: 17px;
     padding-inline: 20px;
     border: 1px solid lightgrey;
-    border-radius: 25px;
+    border-radius: 10px;
     transition: all 0.3s ease;
     background-color: #fff;
 }
 
 .wrapper form .field input:focus,
-form .field input:valid {
+.wrapper form .field input:valid {
     border-color: #4158d0;
 }
 
@@ -76,14 +76,27 @@ form .field input:valid {
     font-size: 17px;
     pointer-events: none;
     transition: all 0.3s ease;
-    padding-inline: 6px;
+    padding-inline: 8px;
 }
 
-form .field input:focus ~ label,
-form .field input:valid ~ label {
+.wrapper form .field input:focus ~ label,
+.wrapper form .field input:valid ~ label {
     top: 0%;
     font-size: 14px;
     color: #4158d0;
-    background-color: #fff;
     transform: translateY(-50%);
+}
+
+/* Pseudo-element untuk membuat border terlihat putus */
+.wrapper form .field input:focus ~ label::before,
+.wrapper form .field input:valid ~ label::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Sesuaikan dengan ketebalan border input */
+    background-color: #fff; /* Sesuaikan dengan background form */
+    transform: translateY(-50%);
+    z-index: -1; /* Agar teks label tetap di atas */
 }
