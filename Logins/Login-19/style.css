@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600|Noto+Sans|Open+Sans:400,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    background: url(./img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    position: relative;
+    width: 400px;
+    background-color: white;
+    padding: 60px 40px;
+}
+
+header {
+    font-size: 40px;
+    margin-bottom: 60px;
+    font-family: "Montserrat", sans-serif;
+}
