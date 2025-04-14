@@ -31,3 +31,40 @@ header {
     margin-bottom: 60px;
     font-family: "Montserrat", sans-serif;
 }
+
+form .input-field,
+form button {
+    margin-block: 25px;
+    position: relative;
+    height: 50px;
+    width: 100%;
+}
+
+.input-field input {
+    height: 100%;
+    width: 100%;
+    border: 1px solid silver;
+    padding-inline: 16px;   
+    outline: none;
+    font-size: 19px;
+    transition: .4s;
+}
+
+input:focus {
+    border: 1px solid #1DA1F2;
+}
+
+.input-field label,
+span.show {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-field label {
+    left: 16px;
+    pointer-events: none;
+    color: gray;
+    font-size: 18px;
+    transition: .4s;
+}
