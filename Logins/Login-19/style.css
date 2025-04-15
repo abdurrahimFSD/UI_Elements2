@@ -68,3 +68,29 @@ span.show {
     font-size: 18px;
     transition: .4s;
 }
+
+span.show {
+    right: 20px;
+    color: #111;
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+    visibility: hidden;
+}
+
+span.show i {
+    font-size: 16px;
+}
+
+input:valid ~ span.show {
+    visibility: visible;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    transform: translateY(-35px);
+    background: white;
+    font-size: 16px;
+    color: #1DA1F2;
+    padding-inline: 5px;
+}
