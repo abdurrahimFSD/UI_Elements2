@@ -28,12 +28,12 @@ body {
 
 header {
     font-size: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     font-family: "Montserrat", sans-serif;
 }
 
 form .input-field,
-form button {
+form .button {
     margin-block: 25px;
     position: relative;
     height: 50px;
@@ -93,4 +93,36 @@ input:valid ~ label {
     font-size: 16px;
     color: #1DA1F2;
     padding-inline: 5px;
+}
+
+form .button {
+    margin-top: 30px;
+    overflow: hidden;
+    z-index: 111;
+}
+
+.button .inner {
+    position: absolute;
+    height: 100%;
+    width: 300%;
+    left: -100%;
+    z-index: -1;
+    transition: all .4s;
+    background: -webkit-linear-gradient(right, #00dbde,#fc00ff,#00dbde,#fc00ff);
+}
+
+.button:hover .inner {
+    left: 0;
+}
+
+.button button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
 }
