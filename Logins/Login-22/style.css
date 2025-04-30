@@ -88,3 +88,33 @@
 .pass-key:valid ~ .show {
     display: block;
 }
+
+.pass {
+    text-align: left;
+    margin-block: 10px;
+}
+
+.pass a {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+.pass:hover a {
+    text-decoration: underline;
+}
+
+.field input[type="submit"] {
+    background-color: #3498db;
+    border: 1px solid #2691d9;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+}
+
+.field input[type="submit"]:hover {
+    background-color: #2691d9;
+}
