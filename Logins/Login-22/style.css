@@ -118,3 +118,70 @@
 .field input[type="submit"]:hover {
     background-color: #2691d9;
 }
+
+.login {
+    color: white;
+    margin-block: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.links {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.facebook,
+.instagram {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+}
+
+.facebook {
+    background-color: #4267B2;
+    border: 1px solid #3e61a8;
+}
+
+.instagram {
+    background-color: #E1306C;
+    border: 1px solid #df2060;
+}
+
+.facebook:hover {
+    background-color: #3e61a8;
+}
+
+.instagram:hover {
+    background-color: #df2060;
+}
+
+.links i {
+    font-size: 17px;
+}
+
+i span {
+    margin-left: 8px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+
+.signup {
+    font-size: 15px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.signup a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
