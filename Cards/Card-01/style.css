@@ -35,3 +35,42 @@ body {
 .card-list .card-item:hover {
     border: 2px solid #000;
 }
+
+.card-list .card-item img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card-list span {
+    display: inline-block;
+    background-color: #F7DFF5;
+    margin-top: 32px;
+    padding: 8px 15px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.card-list .developer {
+    background-color: #F7DFF5;
+    color: #B22485;
+}
+
+.card-list .designer {
+    background-color: #d1e8ff;
+    color: #2968a8;
+}
+
+.card-list .editor {
+    background-color: #d6f8d8;
+    color: #205c20;
+}
+
+.card-list h3 {
+    color: #000;
+    font-size: 1.438rem;
+    margin-top: 28px;
+    font-weight: 600;
+}
