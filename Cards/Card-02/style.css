@@ -57,3 +57,43 @@ body {
     font-size: 1rem;
     margin-top: 25px;
 }
+
+.subscribe-button {
+    display: inline-block;
+    width: 100%;
+    padding-block: 15px;
+    background-color: #FF6B6B;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    margin-top: 40px;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.subscribe-button:hover {
+    background-color: #ff4d4d;
+}
+
+.ribbon-wrap {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    pointer-events: none;
+}
+
+.ribbon {
+    width: 230px;
+    font-size: 0.918rem;
+    text-align: center;
+    padding-block: 8px;
+    background-color: #FF6B6B;
+    color: #fff;
+    position: absolute;
+    transform: rotate(-45deg);
+    right: -17px;
+    top: 29%;
+}
