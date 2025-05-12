@@ -35,3 +35,45 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background-color: #4070f4;
 }
+
+.container {
+    display: flex;
+    gap: 12px;
+    max-width: 400px;
+    width: 100%;
+    background-color: #4070f4;
+    border-radius: 12px;
+    padding: 30px;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    scroll-padding: 30px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.container .card {
+    display: flex;
+    flex: 0 0 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    scroll-snap-align: start;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card .image {
+    height: 150px;
+    width: 150px;
+    padding: 4px;
+    background-color: #4070f4;
+    border-radius: 50%;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
