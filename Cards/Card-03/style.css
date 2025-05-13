@@ -77,3 +77,18 @@ body {
     border-radius: 50%;
     border: 5px solid #fff;
 }
+
+.card h2 {
+    margin-top: 25px;
+    color: #333;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.card p {
+    margin-top: 4px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+}
