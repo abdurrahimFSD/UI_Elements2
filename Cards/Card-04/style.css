@@ -59,3 +59,35 @@
 span {
     font-size: 18px;
 }
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.row .info {
+    text-align: center;
+    padding-inline: 20px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.buttons .btn {
+    background: linear-gradient(to left, #33ccff 0%, #ff99cc 100%);
+    color: #fff;
+    text-decoration: none;
+    margin-inline: 20px;
+    padding: 8px 25px;
+    border-radius: 25px;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.buttons .btn:hover {
+    box-shadow: inset 0 5px 20px rgba(0, 0, 0, 0.4);
+}
