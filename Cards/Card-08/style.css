@@ -117,3 +117,26 @@ body {
 .buttons .button:hover {
     background-color: #0e4bf1;
 }
+
+.profile-card .analytics {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.analytics .data {
+    display: flex;
+    align-items: center;
+    color: #333;
+    padding-inline: 20px;
+    border-right: 2px solid #e7e7e7;
+}
+
+.data i {
+    font-size: 18px;
+    margin-right: 6px;
+}
+
+.data:last-child {
+    border-right: none;
+}
