@@ -118,3 +118,27 @@ section .card .image img {
     margin: 0 2px;
     color: #7d2ae8;
 }
+
+.card .button {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card .button button {
+    background-color: #7d2ae8;
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.button button:hover {
+    background-color: #6616d0;
+}
