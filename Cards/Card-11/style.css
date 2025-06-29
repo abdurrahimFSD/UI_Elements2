@@ -50,3 +50,43 @@ body {
 .product-card .logo-cart i:hover {
     color: #333;
 }
+
+.product-card .main-images {
+    position: relative;
+    height: 210px;
+}
+
+.product-card .main-images img {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    transform: rotate(18deg);
+    left: 12px;
+    top: -40px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.product-card .main-images img.active {
+    opacity: 1;
+}
+
+.product-card .show-details .shoe-name {
+    font-size: 24px;
+    font-weight: 500;
+    color: #161616;
+}
+
+.product-card .show-details p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    text-align: justify;
+}
+
+.product-card .show-details .stars i {
+    margin: 0 -1px;
+    color: #333;
+}
