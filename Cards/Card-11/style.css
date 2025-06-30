@@ -90,3 +90,36 @@ body {
     margin: 0 -1px;
     color: #333;
 }
+
+.product-card .color-price .color-option {
+    display: flex;
+    align-items: center;
+}
+
+.color-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.color-price .color-option .color {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-right: 8px;
+}
+
+.color-option .circles {
+    display: flex;
+}
+
+.color-option .circles .circle {
+    height: 18px;
+    width: 18px;
+    background-color: #0071C7;
+    border-radius: 50%;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
