@@ -22,3 +22,30 @@ body {
     padding: 30px;
     box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
 }
+
+.wrapper header {
+    height: 55px;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+header label {
+    height: 100%;
+    z-index: 2;
+    width: 30%;
+    display: flex;
+    cursor: pointer;
+    font-size: 18px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease;
+}
+
+#tab-1:checked ~ header .tab-1,
+#tab-2:checked ~ header .tab-2,
+#tab-3:checked ~ header .tab-3 {
+    color: #fff;
+}
