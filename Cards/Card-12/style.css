@@ -84,3 +84,32 @@ header .slider {
 .wrapper input[type="radio"] {
     display: none;
 }
+
+.card-area {
+    overflow: hidden;
+}
+
+.card-area .cards {
+    display: flex;
+    width: 300%;
+}
+
+.cards .row {
+    width: 33.4%;
+}
+
+.cards .row-1 {
+    transition: all 0.3s ease;
+}
+
+#tab-1:checked ~ .card-area .cards .row-1 {
+    margin-left: 0%;
+}
+
+#tab-2:checked ~ .card-area .cards .row-1 {
+    margin-left: -33.4%;
+}
+
+#tab-3:checked ~ .card-area .cards .row-1 {
+    margin-left: -66.8%;
+}
