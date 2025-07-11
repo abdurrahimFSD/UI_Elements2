@@ -113,3 +113,43 @@ header .slider {
 #tab-3:checked ~ .card-area .cards .row-1 {
     margin-left: -66.8%;
 }
+
+.row .price-details {
+    margin: 20px 0;
+    text-align: center;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.price-details .price {
+    font-size: 65px;
+    font-weight: 600;
+    position: relative;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.price-details .price::before,
+.price-details .price::after {
+    position: absolute;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
+
+.price-details .price::before {
+    content: "$";
+    left: -13px;
+    top: 17px;
+    font-size: 20px;
+}
+
+.price-details .price::after {
+    content: "/mon";
+    right: -33px;
+    bottom: 17px;
+    font-size: 13px;
+}
+
+.price-details p {
+    font-size: 18px;
+    margin-top: 5px;
+}
