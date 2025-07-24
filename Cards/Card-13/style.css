@@ -104,3 +104,28 @@ body::before {
     font-size: 18px;
     color: #ff676d;
 }
+
+.card .content .media-icons {
+    margin-top: 10px;
+    display: flex;
+}
+
+.media-icons a {
+    text-align: center;
+    line-height: 33px;
+    height: 35px;
+    width: 35px;
+    margin: 0 3px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #ff676d;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.media-icons a:hover {
+    color: #ff676d;
+    background-color: #fff;
+    border-color: #ff676d;
+}
