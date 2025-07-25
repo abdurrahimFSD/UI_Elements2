@@ -28,6 +28,7 @@ body::before {
 
 ::selection {
     background: #ff676d;
+    color: #fff;
 }
 
 .container {
@@ -44,7 +45,7 @@ body::before {
     transition: 1s;
 }
 
-.two:checked ~ .main-card {
+#two:checked ~ .main-card {
     margin-left: -100%;
 }
 
@@ -128,4 +129,58 @@ body::before {
     color: #ff676d;
     background-color: #fff;
     border-color: #ff676d;
+}
+
+.container .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.button label {
+    height: 15px;
+    width: 15px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin-inline: 4px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.button label:active {
+    width: 35px;
+}
+
+#one:checked ~ .button .one {
+    width: 35px;
+}
+
+#one:checked ~ .button .two {
+    width: 15px;
+}
+
+#two:checked ~ .button .one {
+    width: 15px;
+}
+
+#two:checked ~ .button .two {
+    width: 35px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .main-card .cards .card {
+        margin: 20px 0 10px;
+        width: calc(100% / 2 - 10px);
+    }
+}
+
+@media (max-width: 600px) {
+    .main-card .cards .card {
+        width: 100%;
+    }
 }
