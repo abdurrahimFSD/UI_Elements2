@@ -66,3 +66,35 @@ body::before {
     font-size: 13px;
     font-weight: 500;
 }
+
+.box.one .rating {
+    color: #fd9bb0;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.box.one .price-box {
+    margin-top: 16px;
+}
+
+.box.one .discount {
+    font-size: 20px;
+    margin: 10px 0 0 12px;
+    position: relative;
+    color: #737373;
+}
+
+.box.one .discount::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100px;
+    background-color: #737373;
+    top: 50%;
+    left: -8px;
+}
+
+.box.one .price {
+    color: #fc6989;
+    font-size: 30px;
+}
