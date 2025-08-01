@@ -119,3 +119,62 @@ body::before {
 .button1 button:hover {
     transform: scale(0.98);
 }
+
+.container .box.two .image {
+    position: relative;
+    right: 0;
+    top: 0;
+    height: 340px;
+    width: 430px;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container .box.two .image-box {
+    position: relative;
+    text-align: right;
+    right: 0;
+    bottom: 27px;
+}
+
+.box.two .image-box .info {
+    margin: 0 35px 0 0;
+}
+
+.box.two .info .brand {
+    font-size: 17px;
+    font-weight: 600;
+    color: #c9032e;
+}
+
+.box.two .info .name {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+}
+
+.box.two .info .shipping {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+
+.box.two .button2 {
+    margin: 17px 0;
+}
+
+.button2 button {
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    padding: 8px 17px;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+}
