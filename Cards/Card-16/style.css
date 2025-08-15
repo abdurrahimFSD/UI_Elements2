@@ -89,3 +89,29 @@
 #switch:checked ~ .outer .image-box img {
     border-color: transparent;
 }
+
+.content .details {
+    width: 58%;
+    margin: 10px 0 20px 20px;
+    color: #092c3e;
+}
+
+#switch:checked ~ .outer .details {
+    transition: 0.1s;
+    color: #fff;
+}
+
+.content .details .name {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.content .details .job {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.content .details p {
+    font-size: 15px;
+    margin-top: 6px;
+}
