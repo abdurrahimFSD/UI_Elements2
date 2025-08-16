@@ -115,3 +115,26 @@
     font-size: 15px;
     margin-top: 6px;
 }
+
+.content button {
+    display: block;
+    margin-top: 16px;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    padding: 6px 14px;
+    border-radius: 6px;
+    background-color: #092c3e;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.content button:hover {
+    transform: scale(0.97);
+}
+
+#switch:checked ~ .outer button {
+    background-color: #fff;
+    color: #092c3e;
+}
