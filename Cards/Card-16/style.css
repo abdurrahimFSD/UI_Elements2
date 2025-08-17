@@ -138,3 +138,34 @@
     background-color: #fff;
     color: #092c3e;
 }
+
+.media-icons {
+    position: absolute;
+    bottom: 16px;
+    right: 15px;
+    margin-top: 12px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.media-icons i {
+    display: inline-flex;
+    margin: 0 4px;
+    font-size: 16px;
+    color: #092c3e;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.media-icons i:hover {
+    opacity: 1;
+}
+
+#switch:checked ~ .outer i {
+    color: #fff;
+    opacity: 1;
+}
+
+#switch {
+    display: none;
+}
