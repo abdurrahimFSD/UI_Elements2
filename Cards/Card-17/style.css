@@ -24,3 +24,33 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+.content .card {
+    background-color: #fff;
+    width: calc(33% - 20px);
+    text-align: center;
+    padding: 15px 30px 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+.content .card .top {
+    height: 130px;
+    clip-path: polygon(0 0, 100% 0, 100% 53%, 49% 100%, 0 53%);
+    color: #fff;
+    padding: 12px 0 0;
+}
+
+.content .one .top,
+.content .one button {
+    background-color: #14eb6e;
+}
+
+.content .two .top,
+.content .two button {
+    background-color: #e87130;
+}
+
+.content .three .top,
+.content .three button {
+    background-color: #11BCC3;
+}
