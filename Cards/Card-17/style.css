@@ -87,6 +87,21 @@ body {
     color: #cd3241;
 }
 
+.content .card button {
+    outline: none;
+    border: none;
+    height: 42px;
+    width: 100%;
+    color: #fff;
+    margin-top: 30px;
+    border-radius: 3px;
+    font-size: 18px;
+    display: block;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
 .content .one .top,
 .content .one button {
     background-color: #14eb6e;
@@ -116,4 +131,18 @@ body {
 
 .content .three::selection {
     background-color: #d0f9fb;
+}
+
+@media (max-width: 1000px) {
+    .content .card {
+        background-color: #fff;
+        width: calc(50% - 20px);
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 715px) {
+    .content .card {
+        width: 100%;
+    }
 }
