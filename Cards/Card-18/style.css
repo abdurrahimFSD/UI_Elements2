@@ -24,3 +24,34 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+.wrapper .table {
+    background-color: #fff;
+    width: calc(33% - 20px);
+    padding: 30px;
+    position: relative;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.table .price-section {
+    display: flex;
+    justify-content: center;
+}
+
+.table .price-area {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.price-area .inner-area {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    line-height: 117px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
