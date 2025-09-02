@@ -26,7 +26,7 @@ body {
 }
 
 .wrapper .table {
-    /* background-color: #fff; */
+    background-color: #fff;
     width: calc(33% - 20px);
     padding: 30px;
     position: relative;
@@ -134,4 +134,25 @@ body {
 
 .table .btn button:hover {
     border-radius: 5px;
+}
+
+.basic .features li::selection {
+    background-color: #ffd861;
+}
+
+.basic ::selection,
+.basic .price-area,
+.basic .inner-area {
+    background-color: #ffd861;
+}
+
+.basic .btn button {
+    border: 2px solid #ffd861;
+    background-color: #fff;
+    color: #ffd861;
+}
+
+.basic .btn button:hover {
+    background-color: #ffd861;
+    color: #fff;
 }
