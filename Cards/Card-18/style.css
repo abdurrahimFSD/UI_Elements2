@@ -156,3 +156,31 @@ body {
     background-color: #ffd861;
     color: #fff;
 }
+
+.premium ::selection,
+.premium .price-area,
+.premium .inner-area,
+.premium .btn button {
+    background-color: #a26bfa;
+}
+
+.premium .btn button:hover {
+    background-color: #833af8;
+}
+
+.ultimate ::selection,
+.ultimate .price-area,
+.ultimate .inner-area {
+    background-color: #43ef8b;
+}
+
+.ultimate .btn button {
+    border: 2px solid #43ef8b;
+    color: #43ef8b;
+    background-color: #fff;
+}
+
+.ultimate .btn button:hover {
+    background-color: #43ef8b;
+    color: #fff;
+}
