@@ -184,3 +184,42 @@ body {
     background-color: #43ef8b;
     color: #fff;
 }
+
+.basic .package-name {
+    background-color: #ffecb3;
+}
+
+.premium .package-name {
+    background-color: #d0b3ff;
+}
+
+.ultimate .package-name {
+    background-color: #baf8d4;
+}
+
+.basic .package-name::before {
+    content: "Basic";
+}
+
+.premium .package-name::before {
+    content: "Premium";
+    font-size: 24px;
+}
+
+.ultimate .package-name::before {
+    content: "Ultimate";
+    font-size: 24px;
+}
+
+@media (max-width: 1020px) {
+    .wrapper .table {
+        width: calc(50% - 20px);
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 698px) {
+    .wrapper .table {
+        width: 100%;
+    }
+}
