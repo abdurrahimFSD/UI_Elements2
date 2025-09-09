@@ -22,3 +22,41 @@ body {
     background-color: #ecf0f3;
     box-shadow: -3px -3px 7px #fff, 3px 3px 5px #ceced1;
 }
+
+.wrapper {
+    position: relative;
+    width: 350px;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .icon {
+    font-size: 16px;
+    color: #31344b;
+    position: absolute;
+    cursor: pointer;
+    opacity: .7;
+    top: 15px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+}
+
+.wrapper .icon i {
+    position: relative;
+    z-index: 9;
+}
+
+.wrapper .icon.arrow {
+    left: 15px;
+}
+
+.wrapper .icon.dots {
+    right: 15px;
+}
