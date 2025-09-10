@@ -60,3 +60,25 @@ body {
 .wrapper .icon.dots {
     right: 15px;
 }
+
+.wrapper .img-area {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-area .inner-area {
+    height: calc(100% - 12px);
+    width: calc(100% - 12px);
+    border-radius: 50%;
+}
+
+.img-area img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
