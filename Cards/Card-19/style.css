@@ -82,3 +82,30 @@ body {
     border-radius: 50%;
     object-fit: cover;
 }
+
+.wrapper .name {
+    font-size: 23px;
+    font-weight: 500;
+    color: #31344b;
+    margin: 10px 0 5px;
+}
+
+.wrapper .about {
+    color: #44476a;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.wrapper .social-icons {
+    margin: 15px 0 25px;
+}
+
+.social-icons a {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    margin-inline: 5px;
+    display: inline-flex;
+    text-decoration: none;
+    border-radius: 50%;
+}
