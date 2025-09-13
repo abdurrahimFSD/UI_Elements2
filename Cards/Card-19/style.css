@@ -138,3 +138,40 @@ body {
     height: 100%;
     line-height: 40px;
 }
+
+.social-icons a.fb i {
+    color: #4267b2;
+}
+
+.social-icons a.x i {
+    color: #000;
+}
+
+.social-icons a.instagram i {
+    color: #e1306c;
+}
+
+.social-icons a.youtube i {
+    color: #ff0000;
+}
+
+.wrapper .buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.buttons button {
+    position: relative;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding-block: 12px;
+    color: #31344b;
+    font-size: 17px;
+    font-weight: 400;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 4;
+}
