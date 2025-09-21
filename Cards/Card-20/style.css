@@ -76,3 +76,56 @@ body {
     color: #8e44ad;
     margin-bottom: 5px;
 }
+
+.buttons {
+    margin: 20px 0 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.buttons button {
+    background-color: #8e44ad;
+    color: #8e44ad;
+    width: 100%;
+    padding-block: 9px;
+    outline: none;
+    border: 2px solid #8e44ad;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    transition: all 0.3s linear;
+}
+
+.buttons button:first-child {
+    background: none;
+    margin-right: 5px;
+}
+
+.buttons button:last-child {
+    color: #fff;
+    margin-left: 5px;
+}
+
+.buttons button:first-child:hover {
+    background-color: #8e44ad;
+    color: #fff;
+}
+
+.buttons button:hover {
+    color: #fff;
+}
+
+@media (max-width: 1045px) {
+    .container .box {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 710px) {
+    .container .box {
+        width: 100%;
+    }
+}
