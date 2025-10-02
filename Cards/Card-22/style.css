@@ -26,5 +26,43 @@ body {
     max-width: 1130px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.wrapper .cart-nav {
+    position: absolute;
+    right: 0;
+    top: -35%;
+    width: 130px;
+    background-color: #fff;
+    padding: 13px 15px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.15);
+}
+
+.cart-nav .icon {
+    color: #ff7979;
+}
+
+.cart-nav .icon i {
+    font-size: 20px;
+}
+
+.cart-nav .icon span {
+    font-weight: 500;
+}
+
+.cart-nav .item-count {
+    font-size: 15px;
+    width: 23px;
+    height: 23px;
+    color: #ff7979;
+    background-color: #ffcccc;
+    text-align: center;
+    line-height: 23px;
+    border: 1px solid #ffb3b3;
+    border-radius: 50%;
 }
