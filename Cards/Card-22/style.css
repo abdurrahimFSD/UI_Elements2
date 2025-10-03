@@ -66,3 +66,36 @@ body {
     border: 1px solid #ffb3b3;
     border-radius: 50%;
 }
+
+.wrapper .card {
+    position: relative;
+    width: calc(33% - 13px);
+    background-color: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.15);
+}
+
+.wrapper .card img {
+    width: 100%;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.wrapper .card .content {
+    position: absolute;
+    width: 100%;
+    bottom: -50%;
+    background-color: #fff;
+    padding: 10px 20px 22px;
+    box-shadow: 0px -3px 10px 0px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.wrapper .card:hover .content {
+    bottom: 0;
+}
