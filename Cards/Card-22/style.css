@@ -99,3 +99,26 @@ body {
 .wrapper .card:hover .content {
     bottom: 0;
 }
+
+.card .content .row,
+.content .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .row .details span {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.content .row .details p {
+    color: #333;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.content .row .price {
+    color: #ff7979;
+    font-size: 25px;
+    font-weight: 600;
+}
