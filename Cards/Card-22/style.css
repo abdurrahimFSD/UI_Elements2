@@ -122,3 +122,42 @@ body {
     font-size: 25px;
     font-weight: 600;
 }
+
+.content .buttons {
+    margin-top: 20px;
+}
+
+.content .buttons button {
+    width: 100%;
+    padding-block: 10px;
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 3px;
+    border: 2px solid #ff7979;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.buttons button:first-child {
+    color: #ff7979;
+    background-color: #fff;
+    margin-right: 10px;
+}
+
+button:first-child:hover {
+    color: #fff;
+    background-color: #ff7979;
+}
+
+.buttons button:last-child {
+    color: #fff;
+    background-color: #ff7979;
+    margin-left: 10px;
+}
+
+button:last-child:hover {
+    background-color: #ff6666;
+    border-color: #ff6666;
+}
