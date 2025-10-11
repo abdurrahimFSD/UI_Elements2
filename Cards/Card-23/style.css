@@ -106,3 +106,50 @@ body {
     object-fit: cover;
     border-radius: 26px;
 }
+
+.image-box .about {
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 25px;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+#check:checked ~ .image-box .about {
+    opacity: 1;
+}
+
+.about .details {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 35px;
+}
+
+.details .name, .job {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.details .icon i {
+    font-size: 20px;
+    color: #fff;
+    height: 45px;
+    width: 45px;
+    line-height: 43px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin: 14px 5px;
+    transition: all 0.3s ease;
+}
+
+.details .icon i:hover {
+    transform: scale(0.95);
+}
