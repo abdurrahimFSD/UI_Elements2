@@ -87,3 +87,38 @@ html, body {
     font-weight: 600;
     color: #456ABD;
 }
+
+.wrapper .content {
+    margin-block: 10px;
+}
+
+.wrapper .content .name {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.wrapper .content .size-value {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-block: 5px;
+}
+
+.content .size-value span {
+    display: block;
+    height: 28px;
+    width: 28px;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 50%;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #456ABD;
+}
+
+.content .size-value span.active {
+    background: #456ABD;
+    color: #fff;
+}
