@@ -150,3 +150,23 @@ html, body {
 .content .colour-value span.yellow {
     background-color: #EAA523;
 }
+
+.content .colour-value span.active::after {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: -4px;
+    top: -4px;
+    box-sizing: border-box;
+    border: 2px solid #456ABD;
+    border-radius: 50%;
+}
+
+.content .colour-value span.white.active::after {
+    border-color: lightgray;
+}
+
+.content .colour-value span.yellow.active::after {
+    border-color: #EAA523;
+}
