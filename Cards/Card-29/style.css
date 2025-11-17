@@ -65,3 +65,31 @@ body {
     opacity: 0;
     transition: .6s;
 }
+
+#tap-1:checked ~ .inner-part .img-1,
+#tap-2:checked ~ .inner-part .img-2,
+#tap-3:checked ~ .inner-part .img-3 {
+    opacity: 1;
+    transition-delay: .2s;
+}
+
+.content {
+    padding: 0 20px 0 35px;
+    width: 530px;
+    margin-left: 50px;
+    opacity: 0;
+    transition: .6s;
+}
+
+#imgTap:checked ~ .inner-part .content {
+    display: none;
+}
+
+#tap-1:checked ~ .inner-part .content-1,
+#tap-2:checked ~ .inner-part .content-2,
+#tap-3:checked ~ .inner-part .content-3 {
+    opacity: 1;
+    margin-left: 0px;
+    z-index: 100;
+    transition-delay: .3s;
+}
