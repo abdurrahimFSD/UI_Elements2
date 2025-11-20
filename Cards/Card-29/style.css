@@ -136,3 +136,56 @@ body {
 .content button:hover {
     background: linear-gradient(147deg, #fe791b 0%, #fd1c1c 74%);
 }
+
+.sliders {
+    position: absolute;
+    bottom: 25px;
+    left: 65%;
+    transform: translateX(-50%);
+    z-index: 12;
+}
+
+#imgTap:checked ~ .sliders {
+    display: none;
+}
+
+.sliders .tap {
+    position: relative;
+    height: 10px;
+    width: 50px;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    display: inline-flex;
+    margin-inline: 3px;
+    cursor: pointer;
+}
+
+.sliders .tap:hover {
+    background-color: #cccccc;
+}
+
+.sliders .tap::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: -100%;
+    background: linear-gradient(147deg, #f6b323 0%, #f23b26 74%);
+    border-radius: 10px;
+    transform: scaleX(0);
+    transition: transform .6s;
+    transform-origin: left;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: none;
+}
+
+#tap-1:checked ~ .sliders .tap-1::before,
+#tap-2:checked ~ .sliders .tap-2::before,
+#tap-3:checked ~ .sliders .tap-3::before {
+    transform: scaleX(1);
+    width: 100%;
+}
