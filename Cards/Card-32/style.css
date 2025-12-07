@@ -16,3 +16,27 @@ body {
 .contents, .back-face {
     position: absolute;
 }
+
+.center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 290px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.front-face, .back-face {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url(./img/img-1.jpg);
+    background-size: cover;
+    background-position: center;
+    transform: translateY(0deg);
+    border-radius: 10px;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: transform .7s cubic-bezier(.4,.2,.2,1);
+}
