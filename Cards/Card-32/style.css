@@ -71,3 +71,21 @@ body {
     margin: 0 auto;
     margin-top: 10px;
 }
+
+.back-face {
+    transform: rotateY(180deg);
+    background: linear-gradient(45deg, #043348 0%, #032535 100%);
+}
+
+.back {
+    color: white;
+}
+
+.back h2 {
+    font-size: 33px;
+    padding-bottom: 5px;
+}
+
+.back span {
+    font-size: 25px;
+}
