@@ -106,3 +106,28 @@ ul li a {
 .container:hover > ul > li:nth-child(5) a {
     transition-delay: 0.4s;
 }
+
+.container .content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.info {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+    color: #000;
+    line-height: 26px;
+}
+
+.info h2 {
+    font-size: 27px;
+    margin: 3px 0;
+}
+
+.info span {
+    color: #1a1a1a;
+}
