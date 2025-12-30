@@ -36,3 +36,21 @@
     border-radius: 4px;
     transition: all .3s ease;
 }
+
+.content .fa-brands {
+    font-size: 70px;
+    margin: 16px 0;
+}
+
+.content > * {
+    flex: 1 1 100%;
+}
+
+.content:hover {
+    color: white;
+}
+
+.content:hover a {
+    border-color: white;
+    background-color: white;
+}
