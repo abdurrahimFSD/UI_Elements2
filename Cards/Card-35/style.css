@@ -54,3 +54,30 @@
     border-color: white;
     background-color: white;
 }
+
+.content-1:hover {
+    border-color: #1DA1F2;
+    background-color: #1DA1F2;
+}
+
+.content-1:hover a {
+    color: #1DA1F2;
+}
+
+.content-2:hover {
+    border-color: #E1306C;
+    background-color: #E1306C;
+}
+
+.content-2:hover a {
+    color: #E1306C;
+}
+
+.content-3:hover {
+    border-color: #ff0000;
+    background-color: #ff0000;
+}
+
+.content-3:hover a {
+    color: #ff0000;
+}
