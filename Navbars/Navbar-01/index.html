@@ -62,6 +62,19 @@
                 nav.style.top = `${windHeight - navHeight}px`;
             }
         }
+
+        // This function will call when user click mouse's button and move use on nav
+        nav.addEventListener("mousedown", () =>{
+            nav.addEventListener("mousemove", onDrag);
+        });
+
+        // These function will call when user relase mouse button and leave mouse from nav
+        nav.addEventListener("mouseup", () =>{
+            nav.removeEventListener("mousemove", onDrag);
+        });
+        nav.addEventListener("mouseleave", () =>{
+            nav.removeEventListener("mousemove", onDrag);
+        });
     </script>
 </body>
 </html>
