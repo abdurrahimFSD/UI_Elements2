@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #17a2b8;
+    overflow: hidden;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 80px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: grab;
+}
