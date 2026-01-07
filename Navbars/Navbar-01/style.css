@@ -21,3 +21,31 @@ nav {
     align-items: center;
     cursor: grab;
 }
+
+nav .nav-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-45deg);
+}
+
+.nav-content .toggle-btn,
+.nav-content span a {
+    height: 60px;
+    width: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.nav-content .toggle-btn {
+    font-size: 35px;
+    color: #0e2431;
+    z-index: 100;
+    cursor: pointer;
+    transform: rotate(-225deg);
+    transition: all 0.6s ease;
+}
