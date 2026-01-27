@@ -14,3 +14,33 @@ body {
     align-items: center;
     background: #4070F4;
 }
+
+nav {
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 0 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.nav-content {
+    display: flex;
+    height: 120px;
+    align-items: center;
+    list-style: none;
+    position: relative;
+}
+
+.link-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 120px;
+    width: 95px;
+    text-decoration: none;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.link-item.active {
+    transform: translateY(-10px);
+}
