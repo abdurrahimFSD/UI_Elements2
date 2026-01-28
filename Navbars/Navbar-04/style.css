@@ -44,3 +44,27 @@ nav {
 .link-item.active {
     transform: translateY(-10px);
 }
+
+.link-icon {
+    font-size: 38px;
+    color: #999;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.link-item.active .link-icon {
+    color: #4070F4;
+}
+
+.link-text {
+    position: absolute;
+    font-size: 12px;
+    font-weight: 500;
+    color: #4070F4;
+    opacity: 0;
+    transform: translateY(32px);
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.link-item.active .link-text {
+    opacity: 1;
+}
