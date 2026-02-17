@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7d2ae8;
+}
+
+.navbar {
+    position: relative;
+    width: 500px;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
