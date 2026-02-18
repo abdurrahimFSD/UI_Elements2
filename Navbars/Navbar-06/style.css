@@ -25,3 +25,23 @@ body {
     overflow: hidden;
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 }
+
+.navbar ul {
+    position: relative;
+    display: flex;
+}
+
+.navbar ul li {
+    position: relative;
+    list-style-type: none;
+}
+
+.navbar ul li a {
+    position: relative;
+    width: 90px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
