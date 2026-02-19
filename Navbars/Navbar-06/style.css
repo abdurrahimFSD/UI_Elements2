@@ -45,3 +45,21 @@ body {
     align-items: center;
     text-decoration: none;
 }
+
+.navbar ul li a i {
+    position: absolute;
+    font-size: 38px;
+    color: #7d2ae8;
+}
+
+ul li a i.activeIcon {
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.6s ease;
+    transition-delay: 0.2s;
+}
+
+.navbar ul li.active a i {
+    opacity: 1;
+    pointer-events: auto;
+}
