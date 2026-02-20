@@ -63,3 +63,37 @@ ul li a i.activeIcon {
     opacity: 1;
     pointer-events: auto;
 }
+
+.navbar ul .indicator {
+    position: absolute;
+    bottom: -19px;
+    left: 34px;
+    height: 36px;
+    width: 25px;
+    background-color: #7d2ae8;
+    border-radius: 50%;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+ul .indicator::before{
+    content: "";
+    position: absolute;
+    left: -15px;
+    bottom: 50%;
+    height: 22px;
+    width: 20px;
+    background: #fff;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 10px 0 #7d2ae8;
+}
+ul .indicator::after{
+    content: "";
+    position: absolute;
+    right: -15px;
+    bottom: 50%;
+    height: 22px;
+    width: 20px;
+    background: #fff;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0 10px 0 #7d2ae8;
+}
