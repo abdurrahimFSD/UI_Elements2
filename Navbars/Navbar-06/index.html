@@ -10,7 +10,7 @@
 <body>
     <div class="navbar">
         <ul>
-            <li>
+            <li class="active">
                 <a href="#">
                     <i class='bx bx-home icon'></i>
                     <i class='bx bxs-home activeIcon'></i>
@@ -43,5 +43,21 @@
             <div class="indicator"></div>
         </ul>
     </div>
+
+    <script>
+        const navbar = document.querySelector(".navbar"),
+            allLi = document.querySelectorAll("li");
+
+        allLi.forEach((li, index) => {
+            li.addEventListener("click", e => {
+                e.preventDefault();
+                navbar.querySelector(".active").classList.remove("active");
+                li.classList.add("active");
+
+                const indicator = document.querySelector(".indicator");
+                indicator.style.transform = `translateX(calc(${index * 90}px))`;
+            });
+        });
+    </script>
 </body>
 </html>
