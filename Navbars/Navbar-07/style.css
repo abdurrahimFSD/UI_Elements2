@@ -16,3 +16,28 @@ nav {
     padding: 20px;
     transition: all 0.4s ease;
 }
+
+nav.sticky {
+    padding: 15px 20px;
+    background-color: #4070f4;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+nav .nav-content {
+    height: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo a {
+    font-weight: 500;
+    font-size: 25px;
+    color: #4070f4;
+}
+
+nav.sticky .logo a {
+    color: #fff;
+}
