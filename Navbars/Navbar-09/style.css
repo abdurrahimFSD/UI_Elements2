@@ -62,7 +62,7 @@ nav .navbar .links li a {
     height: 100%;
     text-decoration: none;
     white-space: nowrap;
-    color: #fff;
+    /* color: #fff; */
     font-size: 15px;
     font-weight: 500;
 }
@@ -78,7 +78,7 @@ nav .navbar .links li .arrow {
     line-height: 70px;
     text-align: center;
     display: inline-block;
-    color: #fff;
+    /* color: #fff; */
     transition: all 0.3s ease;
 }
 
@@ -108,4 +108,21 @@ nav .navbar .links li:hover .js-sub-menu {
     color: #fff;
     font-size: 15px;
     font-weight: 500;
+}
+
+.navbar .links li .sub-menu .more-arrow {
+    line-height: 40px;
+}
+
+.navbar .links li .sub-menu .more-sub-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border-radius: 0 4px 4px 4px;
+    z-index: 1;
+    display: none;
+}
+
+.links li .sub-menu .more:hover .more-sub-menu {
+    display: block;
 }
