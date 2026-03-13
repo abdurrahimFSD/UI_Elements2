@@ -218,3 +218,50 @@ nav .navbar .links li:hover .js-sub-menu {
         font-size: 15px;
     }
 }
+
+@media (max-width: 800px) {
+    .navbar .bx-menu {
+        display: block;
+    }
+
+    nav .navbar .nav-links {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        display: block;
+        max-width: 270px;
+        width: 100%;
+        background-color: #3e8da8;
+        line-height: 40px;
+        padding: 20px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        transition: all 0.5s ease;
+        z-index: 1000;
+    }
+
+    .navbar .nav-links .sidebar-logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sidebar-logo .logo-name {
+        font-size: 25px;
+        color: #fff;
+    }
+
+    .sidebar-logo i,
+    .navbar .bx-menu {
+        font-size: 25px;
+        color: #fff;
+    }
+
+    nav .navbar .links {
+        display: block;
+        margin-top: 20px;
+    }
+
+    nav .navbar .links li .arrow {
+        line-height: 40px;
+    }
+}
