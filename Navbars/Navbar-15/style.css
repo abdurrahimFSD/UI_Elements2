@@ -13,3 +13,30 @@ nav {
     width: 100%;
     background: #242526;
 }
+
+nav .wrapper {
+    position: relative;
+    max-width: 1300px;
+    padding: 0 30px;
+    height: 70px;
+    line-height: 70px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper .logo a {
+    color: #f2f2f2;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.wrapper .nav-links {
+    display: inline-flex;
+}
+
+.nav-links li {
+    list-style: none;
+}
