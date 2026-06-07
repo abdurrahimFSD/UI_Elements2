@@ -175,4 +175,28 @@ nav .wrapper {
         box-shadow: 0px 15px 15px rgba(0,0,0,0.18);
         transition: all 0.3s ease;
     }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #242526;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #3A3B3C;
+    }
+
+    #menu-btn:checked ~ .nav-links {
+        left: 0%;
+    }
+
+    #menu-btn:checked ~ .btn.menu-btn {
+        display: none;
+    }
+
+    #close-btn:checked ~ .btn.menu-btn {
+        display: block;
+    }
 }
