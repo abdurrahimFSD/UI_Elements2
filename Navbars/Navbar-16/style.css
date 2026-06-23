@@ -153,4 +153,23 @@
         background: #222;
         transition: all 0.3s ease;
     }
+    .navbar.show .menu-list {
+        left: 0%;
+    }
+    .navbar .menu-list li {
+        margin-top: 45px;
+    }
+    .navbar .menu-list li a {
+        font-size: 23px;
+        margin-left: -100%;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .navbar.show .menu-list li a {
+        margin-left: 0px;
+    }
+}
+@media (max-width: 380px) {
+    .navbar .logo a {
+        font-size: 27px;
+    }
 }
