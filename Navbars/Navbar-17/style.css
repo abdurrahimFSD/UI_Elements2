@@ -66,3 +66,28 @@ nav .menu {
     box-shadow: inset -3px -3px 7px #ffffff,
               inset 3px 3px 5px #ceced1;
 }
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.upper {
+    font-size: 40px;
+    font-weight: 600;
+    color: #31344b;
+}
+
+.lower {
+    font-size: 40px;
+    font-weight: 600;
+    color: #31344b;
+}
+
+.menu ul a:hover {
+    color: #3498db;
+}
