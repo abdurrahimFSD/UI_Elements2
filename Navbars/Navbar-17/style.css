@@ -91,3 +91,20 @@ nav .menu {
 .menu ul a:hover {
     color: #3498db;
 }
+
+nav label.btn {
+    color: #31344b;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+}
+
+nav label.cancel {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+}
+
+#check {
+    display: none;
+}
