@@ -1,0 +1,51 @@
+1. Proses Pendataan & Profiling (Onboarding IKM)
+Ini adalah pintu masuk utama agar IKM terdata di sistem.
+    1).Registrasi Akun: Admin mendaftarkan akun untuk Pelaku IKM, atau IKM mendaftar mandiri (tergantung implementasi halaman depan).
+    2).Validasi Profil Wajib (Smart Redirect):
+        - Saat Pelaku IKM login pertama kali, sistem (via ProfileController) mengecek apakah data usahanya sudah ada.
+        - Jika belum ada, sistem "memaksa" user masuk ke halaman Formulir Profil Baru. Menu lain tidak bisa diakses maksimal.
+    3). Pengisian Data Lengkap:
+        - IKM mengisi: Identitas Pemilik, Data Usaha (mengacu ke Master KBLI, Badan Usaha), Alamat (Kecamatan/Desa via API), dan Kontak.
+        - Upload Legalitas: IKM mengunggah NIB, Sertifikat Halal, dan Foto Produk.
+        - Sistem: Memvalidasi keunikan NIK, NIB, dan Nomor Halal agar tidak ada data ganda.
+
+2. Proses Pelaporan Berkala (Monitoring Kinerja)
+Dinas memantau pertumbuhan ekonomi IKM melalui laporan ini.
+    1).Input Laporan Mandiri:
+        - Setiap Triwulan, Pelaku IKM login dan masuk menu Perkembangan.
+        - IKM mengisi data: Nilai Investasi, Nilai Produksi (Omzet), Nilai Bahan Baku, Kapasitas Produksi, dan Jumlah Tenaga Kerja (L/P).
+    2).Validasi Kepemilikan:
+        - Sistem otomatis mengaitkan laporan dengan ID Profil IKM yang sedang login (mencegah klaim data orang lain).
+    3).Agregasi Data:
+        - Data ini masuk ke database dan langsung bisa dilihat oleh Super Admin dan Pimpinan dalam bentuk tabel rekapitulasi (diurutkan dari tahun/triwulan terbaru).
+
+3. Siklus Manajemen Kegiatan (Pelatihan/Pameran)
+Fitur interaktif antara Dinas dan IKM.
+    1). Tahap A: Perencanaan (Admin)
+        - Admin membuat kegiatan baru (Input: Nama, Lokasi, Jadwal, Kuota Peserta, Batas Daftar).
+        - Admin mengubah status dari Draft menjadi Published agar muncul di dashboard IKM (untuk status itu ada di input select, jadi bisa pilih draft dulu atau langsung publish).
+    2). Tahap B: Pendaftaran (IKM)
+        - IKM melihat daftar kegiatan yang Published.
+        - Sistem mengecek:
+            - Apakah IKM sudah melengkapi profil? (Jika belum, tolak).
+            - Apakah pendaftaran masih buka (Deadline & Status)?
+            - Apakah sudah pernah daftar?
+        - Jika lolos, IKM klik "Daftar". Status kepesertaan: Pending.
+    3). Tahap C: Seleksi (Admin)
+        - Admin melihat daftar pendaftar.
+        - Admin melakukan Verifikasi (Approve atau Reject).
+        - Sistem: Mengecek sisa kuota saat admin klik Approve. Jika penuh, sistem menolak verifikasi.
+        - Admin mencetak Daftar Hadir (PDF) untuk dibawa ke lokasi acara.
+    4). Tahap D: Pasca-Kegiatan & Sertifikasi
+        - Setelah acara selesai, Admin memverifikasi kehadiran dan mengupdate data peserta.
+        - Admin menandai peserta yang memenuhi syarat dengan status Lulus (is_graduated = true) dan menginput nomor sertifikat (opsional).
+        - Pelaku IKM melihat riwayat kegiatan di halaman mereka.
+        - Jika sudah ditandai admin, label status berubah menjadi "Lulus".
+        - Tombol "Cetak Sertifikat" (PDF Landscape) hanya muncul di halaman detail kegiatan milik Super Admin.
+        - Admin mendownload/mencetak sertifikat tersebut untuk kemudian ditandatangani atau diserahkan kepada IKM (secara fisik/manual).
+
+4. Proses Monitoring & Pelaporan (Pimpinan)
+Pimpinan tidak menginput data, hanya memantau.
+    1). Dashboard Monitoring 
+    2). Akses Data Read-Only
+    3). Cetak Laporan
