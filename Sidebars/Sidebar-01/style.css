@@ -54,3 +54,26 @@ body {
 .sidebar.collapsed {
     width: 90px;
 }
+
+.sidebar .sidebar-header {
+    padding: 20px 18px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-border-hr);
+}
+
+.sidebar-header .header-logo {
+    width: 46px;
+    height: 46px;
+    display: block;
+    object-fit: contain;
+    border-radius: 50%;
+    transition: opacity 0.4s ease;
+}
+
+.sidebar.collapsed .header-logo {
+    opacity: 0;
+    pointer-events: none;
+}
