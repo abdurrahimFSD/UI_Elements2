@@ -114,3 +114,27 @@ body {
 .sidebar.collapsed .sidebar-toggle span {
     transform: rotate(180deg);
 }
+
+.sidebar .sidebar-content {
+    flex: 1;
+    padding: 20px 18px;
+    overflow: hidden auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-text-placeholder) transparent;
+}
+
+.sidebar.collapsed .sidebar-content {
+    scrollbar-width: none;
+}
+
+.sidebar-content .search-form {
+    border-radius: 8px;
+    min-height: 48px;
+    margin: 5px 0 20px;
+    align-items: center;
+    display: flex;
+    padding: 0 15px;
+    white-space: nowrap;
+    background: var(--color-bg-secondary);
+    transition: 0.4s ease;
+}
