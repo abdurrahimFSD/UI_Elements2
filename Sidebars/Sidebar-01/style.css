@@ -138,3 +138,30 @@ body {
     background: var(--color-bg-secondary);
     transition: 0.4s ease;
 }
+
+.sidebar.collapsed .search-form:hover {
+    cursor: pointer;
+}
+
+.sidebar.content .search-form:focus-within,
+.sidebar.collapsed .search-form:hover {
+    background: var(--color-hover-secondary);
+}
+
+.sidebar-content .search-form span {
+    color: var(--color-text-placeholder);
+}
+
+.search-form input {
+    background: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    margin-left: 15px;
+    font-size: 1rem;
+    color: var(--color-text-primary);
+}
+
+.search-form input::placeholder {
+    color: var(--color-text-placeholder);
+}
