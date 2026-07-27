@@ -165,3 +165,36 @@ body {
 .search-form input::placeholder {
     color: var(--color-text-placeholder);
 }
+
+.sidebar-content .menu-list {
+    display: flex;
+    gap: 4px;
+    list-style: none;
+    flex-direction: column;
+}
+
+.menu-list .menu-link {
+    display: flex;
+    gap: 12px;
+    white-space: nowrap;
+    border-radius: 8px;
+    padding: 12px 15px;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-text-primary);
+    transition: 0.3s ease;
+}
+
+.menu-link .menu-label {
+    transition: opacity 0.3s ease;
+}
+
+.sidebar.collapsed .menu-link .menu-label {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.menu-list .menu-link:is(:hover, .active) {
+    color: #fff;
+    background: var(--color-hover-primary);
+}
