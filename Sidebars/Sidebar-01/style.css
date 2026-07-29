@@ -223,3 +223,20 @@ body {
 .sidebar-footer .theme-toggle:hover {
     background: var(--color-hover-secondary);
 }
+
+.theme-toggle .theme-label {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.theme-toggle .theme-label .theme-text {
+    font-size: 1rem;
+    transition: opacity 0.4s 0.2s ease;
+}
+
+.sidebar.collapsed .theme-toggle :where(.theme-text, .theme-toggle-track) {
+    opacity: 0;
+    width: 0;
+    transition: all 0.2s ease;
+}
