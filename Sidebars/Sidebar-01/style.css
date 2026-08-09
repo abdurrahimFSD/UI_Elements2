@@ -270,3 +270,26 @@ body.dark-theme .theme-toggle-track {
 body.dark-theme .theme-toggle-indicator {
     transform: translateX(24px);
 }
+
+.site-nav {
+    top: 0;
+    display: none;
+    padding: 15px 20px;
+    position: sticky;
+    background: var(--color-bg-primary);
+    border-bottom: 1px solid var(--color-border-hr);
+}
+
+.site-nav .sidebar-toggle {
+    position: unset;
+}
+
+.container {
+    display: flex;
+}
+
+.container .main-content {
+    flex: 1;
+    padding: 30px;
+    color: var(--color-text-primary);
+}
