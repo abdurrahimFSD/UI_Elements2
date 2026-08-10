@@ -293,3 +293,61 @@ body.dark-theme .theme-toggle-indicator {
     padding: 30px;
     color: var(--color-text-primary);
 }
+
+.main-content .page-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.main-content .card {
+    border-radius: 8px;
+    padding: 20px;
+    background-color: var(--color-bg-sidebar);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: 10;
+        opacity: 0;
+        pointer-events: none;
+        background: rgba(0, 0, 0, 0.6);
+        transition: 0.4s ease;
+    }
+    
+    body:has(.sidebar:not(.collapsed))::before {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    
+    body:has(.sidebar:not(.collapsed)) {
+        overflow: hidden;
+    }
+    
+    .site-nav {
+        display: block;
+    }
+    
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        z-index: 20;
+        width: 270px;
+        transition: left 0.4s ease;
+    }
+    
+    .sidebar.collapsed {
+        left: -270px;
+        width: 270px;
+    }
+    
+    .container .main-content {
+        padding: 30px 20px;
+    }
+}
