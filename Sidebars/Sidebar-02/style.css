@@ -42,3 +42,30 @@ body {
     object-fit: contain;
     border-radius: 50%;
 }
+
+.sidebar-header .sidebar-toggle,
+.sidebar-menu-button {
+    position: absolute;
+    right: 20px;
+    height: 35px;
+    width: 35px;
+    color: #151A2D;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    background: #EEF2FF;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: 0.4s ease;
+}
+
+.sidebar.collapsed .sidebar-header .sidebar-toggler {
+    transform: translate(-4px, 65px);
+}
+
+.sidebar-header .sidebar-toggler span,
+.sidebar-menu-button span {
+    font-size: 1.75rem;
+    transition: 0.4s ease;
+}
