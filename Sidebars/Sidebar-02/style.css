@@ -69,3 +69,21 @@ body {
     font-size: 1.75rem;
     transition: 0.4s ease;
 }
+
+.sidebar.collapsed .sidebar-header .sidebar-toggler span {
+    transform: rotate(180deg);
+}
+
+.sidebar-header .sidebar-toggler:hover {
+    background: #d9e1fd;
+}
+
+.sidebar-nav .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 4px;
+    padding: 0 15px;
+    flex-direction: column;
+    transform: translateY(15px);
+    transition: 0.4s ease;
+}
