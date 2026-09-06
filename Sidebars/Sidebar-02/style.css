@@ -126,3 +126,23 @@ body {
 .sidebar .nav-link .nav-label {
     transition: opacity 0.3s ease;
 }
+
+.sidebar.collapsed .nav-link :where(.nav-label, .dropdown-icon) {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar.collapsed .nav-link .dropdown-icon {
+    transition: opacity 0.3s 0s ease;
+}
+
+.sidebar-nav .secondary-nav {
+    position: absolute;
+    bottom: 35px;
+    width: 100%;
+    background: #151A2D;
+}
+
+.sidebar-nav .nav-item {
+    position: relative;
+}
