@@ -201,3 +201,18 @@ body {
 .sidebar.collapsed .dropdown-menu .nav-link {
     padding: 7px 15px;
 }
+
+.dropdown-menu .nav-item .nav-link.dropdown-title {
+    display: none;
+    color: #fff;
+    padding: 9px 15px;
+}
+
+.dropdown-menu:has(.dropdown-link) .nav-item .dropdown-title {
+    font-weight: 500;
+    padding: 7px 15px;
+}
+
+.sidebar.collapsed .dropdown-menu .nav-item .dropdown-title {
+    display: block;
+}
