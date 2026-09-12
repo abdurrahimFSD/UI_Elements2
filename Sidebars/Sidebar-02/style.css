@@ -237,4 +237,12 @@ body {
         width: 270px;
         left: -270px;
     }
+
+    .sidebar.collapsed .sidebar-header .sidebar-toggler {
+        transform: none;
+    }
+
+    .sidebar.collapsed .sidebar-nav .primary-nav {
+        transform: translateY(15px);
+    }
 }
