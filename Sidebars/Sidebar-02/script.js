@@ -10,3 +10,17 @@ const closeAllDropdowns = () => {
         toggleDropdown(openDropdown, openDropdown.querySelector(".dropdown-menu"), false);
     });
 }
+
+// Attach click event to all dropdown toggles
+document.querySelectorAll(".dropdown-toggle").forEach((dropdownToggle) => {
+    dropdownToggle.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        const dropdown = dropdownToggle.closest(".dropdown-container");
+        const menu = dropdown.querySelector(".dropdown-menu");
+        const isOpen = dropdown.classList.contains("open");
+
+        closeAllDropdowns(); // Close all open dropdowns
+        toggleDropdown(dropdown, menu, !isOpen); // Toggle current dropdown visibility
+    })
+})
