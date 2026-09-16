@@ -24,3 +24,11 @@ document.querySelectorAll(".dropdown-toggle").forEach((dropdownToggle) => {
         toggleDropdown(dropdown, menu, !isOpen); // Toggle current dropdown visibility
     })
 })
+
+// Attach click event to sidebar toggle buttons
+document.querySelectorAll(".sidebar-toggler, .sidebar-menu-button").forEach((button) => {
+    button.addEventListener("click", () => {
+        closeAllDropdowns();
+        document.querySelector(".sidebar").classList.toggle("collapsed");
+    });
+});
