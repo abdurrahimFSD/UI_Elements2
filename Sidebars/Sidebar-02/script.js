@@ -32,3 +32,8 @@ document.querySelectorAll(".sidebar-toggler, .sidebar-menu-button").forEach((but
         document.querySelector(".sidebar").classList.toggle("collapsed");
     });
 });
+
+// Collapse sidebar by default on small screens
+if (window.innerWidth <= 1024) {
+    document.querySelector(".sidebar").classList.add("collapsed");
+}
