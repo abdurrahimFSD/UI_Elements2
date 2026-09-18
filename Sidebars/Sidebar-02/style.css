@@ -43,7 +43,7 @@ body {
     border-radius: 50%;
 }
 
-.sidebar-header .sidebar-toggle,
+.sidebar-header .sidebar-toggler,
 .sidebar-menu-button {
     position: absolute;
     right: 20px;
