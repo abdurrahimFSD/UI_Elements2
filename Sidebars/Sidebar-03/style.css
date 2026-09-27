@@ -64,3 +64,16 @@ body {
 .sidebar-header .menu-toggler {
     display: none;
 }
+
+.sidebar.collapsed .sidebar-header .toggler {
+    transform: translate(-4px, 65px);
+}
+
+.sidebar-header .toggler:hover {
+    background: #dde4fb;
+}
+
+.sidebar-header .toggler span {
+    font-size: 1.75rem;
+    transition: 0.4s ease;
+}
