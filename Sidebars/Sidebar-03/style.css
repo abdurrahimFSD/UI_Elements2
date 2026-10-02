@@ -156,3 +156,24 @@ body {
     transform: translateY(50%);
     transition: all 0.4s ease;
 }
+
+.sidebar-nav .secondary-nav {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .sidebar {
+        height: 56px;
+        margin: 13px;
+        overflow-y: hidden;
+        scrollbar-width: none;
+        width: calc(100% - 26px);
+        max-height: calc(100vh - 26px);
+    }
+
+    .sidebar.menu-active {
+        overflow-y: auto;
+    }
+}
