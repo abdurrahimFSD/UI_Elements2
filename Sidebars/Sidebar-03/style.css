@@ -176,4 +176,23 @@ body {
     .sidebar.menu-active {
         overflow-y: auto;
     }
+
+    .sidebar .sidebar-header {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        border-radius: 16px;
+        background: #151A2D;
+        padding: 8px 10px;
+    }
+
+    .sidebar-header .header-logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .sidebar-header .sidebar-toggler,
+    .sidebar-nav .nav-item:hover .nav-tooltip {
+        display: none;
+    }
 }
