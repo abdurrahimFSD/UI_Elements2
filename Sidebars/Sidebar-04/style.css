@@ -11,3 +11,26 @@ body {
     min-height: 100vh;
     background: #F0F4FF;
 }
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 85px;
+    display: flex;
+    overflow-x: hidden;
+    flex-direction: column;
+    background: #161a2d;
+    padding: 25px 20px;
+    transition: all 0.4s ease;
+}
+
+.sidebar:hover {
+    width: 260px;
+}
+
+.sidebar .sidebar-header {
+    display: flex;
+    align-items: center;
+}
