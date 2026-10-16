@@ -34,3 +34,24 @@ body {
     display: flex;
     align-items: center;
 }
+
+.sidebar .sidebar-header img {
+    width: 42px;
+    border-radius: 50%;
+}
+
+.sidebar .sidebar-header h2 {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    white-space: nowrap;
+    margin-left: 23px;
+}
+
+.sidebar-links h4 {
+    color: #fff;
+    font-weight: 500;
+    white-space: nowrap;
+    margin: 10px 0;
+    position: relative;
+}
