@@ -135,3 +135,18 @@ body {
     font-size: 1rem;
     font-weight: 600;
 }
+
+.user-profile span {
+    font-size: 0.775rem;
+    font-weight: 600;
+}
+
+.user-detail {
+    margin-left: 23px;
+    white-space: nowrap;
+}
+
+.sidebar:hover .user-account {
+    background: #fff;
+    border-radius: 4px;
+}
