@@ -92,3 +92,16 @@ body {
 .sidebar:hover .links h4 {
     display: block;
 }
+
+.links hr {
+    margin: 10px 8px;
+    border: 1px solid #4c4c4c;
+}
+
+.sidebar:hover .links hr {
+    border-color: transparent;
+}
+
+.links li span {
+    padding: 12px 10px;
+}
