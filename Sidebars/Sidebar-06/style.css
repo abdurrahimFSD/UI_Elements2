@@ -11,3 +11,21 @@ body {
     min-height: 100vh;
     background: #eef5fe;
 }
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.nav_image {
+    display: flex;
+    min-width: 55px;
+    justify-content: center;
+}
+
+.nav_image img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
