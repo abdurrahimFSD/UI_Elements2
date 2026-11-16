@@ -96,3 +96,18 @@ body {
     opacity: 0;
     pointer-events: none;
 }
+
+#lock-icon, 
+#sidebar-close {
+    padding: 10px;
+    color: #4070f4;
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: -4px;
+    transition: all 0.3s ease;
+}
+
+#sidebar-close {
+    display: none;
+    color: #333;
+}
