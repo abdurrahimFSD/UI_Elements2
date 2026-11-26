@@ -202,3 +202,33 @@ body {
     width: 40px;
     margin-left: 20px;
 }
+
+@media screen and (max-width: 1100px) {
+    .navbar {
+        left: 65%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .sidebar {
+        left: 0;
+        z-index: 1000;
+    }
+    .sidebar.close {
+        left: -100%;
+    }
+    #sidebar-close {
+        display: block;
+    }
+    #lock-icon {
+        display: none;
+    }
+    .navbar {
+        left: 0;
+        max-width: 100%;
+        transform: translateX(0%);
+    }
+    #sidebar-open {
+        display: block;
+    }
+}
